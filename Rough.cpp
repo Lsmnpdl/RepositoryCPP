@@ -1,18 +1,29 @@
-#include <iostream>
+/* Isosceles pyramid */
+#include<iostream>
+
 using namespace std;
 
-int main() {
-    int value = 65;
+int main()
+{
+    int rows;
+    cout<<"Enter rows: ";
+    cin>>rows;
 
-    // reinterpret int* as char* to look at bytes
-    char* bytePtr = reinterpret_cast<char*>(&value);
+    int i;
+    int num=1;
 
-    cout << "Integer value: " << value << endl;
-    cout << "Bytes in memory (hex): ";
-    for (size_t i = 0; i < sizeof(int); ++i) {
-        cout << hex << (0xFF & static_cast<unsigned int>(bytePtr[i])) << " ";
+    for(i=1;i<=rows;i++)
+    {
+        for(int j1=1;j1<=rows-1;j1++)
+        {
+            cout<<" ";
+        }
+        for(int j2=1;j2<=i;j2++)
+        {
+            cout<<num<<" ";
+            num++;
+        }
+        cout<<endl;
     }
-    cout << endl;
-
-    return 0;
+return 0;
 }
