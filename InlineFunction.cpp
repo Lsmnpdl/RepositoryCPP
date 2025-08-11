@@ -10,6 +10,6 @@ inline int add(int x, int y)
 int main()
 {
     int a=5, b=7;
-    cout<<"Sum of x + y:"<<add(a,b);
+    cout<<"Sum of x + y: "<<add(a,b);//Replace add(a,b) with x+y
     return 0;
 }
