@@ -4,8 +4,8 @@ using namespace std;
 
 int main()
 {
-    char c;
-    cin.get(c);
-    cout.put(c);
+    string line;
+    getline(cin,line);
+    cout<<line<<endl;
     return 0;
 }

@@ -1,0 +1,1 @@
+  cin.ignore(); // Clear the leftover newline from buffer
