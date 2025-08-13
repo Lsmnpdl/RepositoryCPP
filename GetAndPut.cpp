@@ -1,11 +1,11 @@
-#include <iostream>
-#include <string>
+#include<iostream>
 
 using namespace std;
 
-int main() {
-    string line;
-    getline(cin, line);   // Read entire line including spaces
-    cout << line << endl; // Print the line
+int main()
+{
+    char c;
+    cin.get(c);
+    cout.put(c);
     return 0;
 }
